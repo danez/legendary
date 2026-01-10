@@ -47,7 +47,6 @@ jobs:
       run: pyinstaller
         --onefile
         --name legendary
-        --log-level=DEBUG
         ${{ steps.strip.outputs.option }}
         -i ../assets/windows_icon.ico
         cli.py
